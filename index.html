@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bfd044f0a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" id="home">
+                <h1> Hi, I am <span>Hemanth</span>
+                    <div>and I am a passionate</div>
+
+                    <span id="element"></span>
+                </h1>
+            </div>
+        </div>
+        <!-- -------------------ABOUT SECTION--------- -->
+    </div>
+    <div id="about">
+        <div class="contianer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a present Masters in AI student from the University of Galway.<br> I have been working on AI
+                        related academic and research projects since 2020.<br> I really enjoy working with teams for
+                        Hackathons and on Kaggle,<br> and I also like to learn new concepts.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI Solutions</span><br>Implementing AI for use cases.</li>
+                            <li><span>Data Analytics</span><br>Analysing data and providing insights</li>
+                            <li><span>Robotics</span><br>Building Robots for specific use cases</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Mar 2020 - June 2020</span><br>Embedded Systems Intern at Life9 Sys</li>
+                            <li><span>June 2020 - June 2021</span><br>AI R&D Intern at Samsung</li>
+                            <li><span>July 2021 - Sep 2021</span><br>MITACS GRI Intern at Concordia University</li>
+                            <li><span>Jan 2021 - Oct 2021</span><br>Computer Vision Intern at Point Zero Solutions</li>
+                            <li><span>Jan 2022 - Jun 2023</span><br>Data Analyst at Deloitte USI</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br>Bachelors of Technology in ECE from VIT Chennai.</li>
+                            <li><span>2023-2024</span><br>Master of Science Computer Science (AI) from University of
+                                Galway.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------PORTFOLIO------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Contactless Auth System</h3>
+                        <p>A contactless Authorization System monitoring entry and exit points.</p>
+                        <a href="https://github.com/hemanthh17/Contactless_Authorisation_System">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                    <div class="layer">
+                        <h3>Custom Wakeword Detection</h3>
+                        <p>Recognising Custom Wakewords from Speech Data using AI.</p>
+                        <a href="https://github.com/hemanthh17/Wakeword-Detection-TF">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Free Parking Lot Detection</h3>
+                        <p>Detecting Free Parking Spaces with help of YOLO Object detection model.</p>
+                        <a href="https://github.com/hemanthh17/yolo_project">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <a href="https://github.com/hemanthh17" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -------------- Hobbies------------ -->
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">My Hobbies</h1>
+            <div class="hobbies-list">
+                <div>
+                    <i class="fa-solid fa-tv"></i>
+                    <h2>Watching Anime</h2>
+                    <p>I watch Anime late at night, especially motivational ones.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h2>Cooking</h2>
+                    <p>I try to experiment with new dishes and serve them to others to get their opinion.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shoe-prints"></i>
+                    <h2>Playing Cricket</h2>
+                    <p>I play cricket outside on lawn with my close friends on weekends. I also hit the gym to keep the
+                        carbs in check.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------CONTACT----------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> HemantHHariscts@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hemanth_hari_17/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/hemanth-h/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/HemanthHarikri2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/hemanthh17"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.kaggle.com/hemanthhari"><i class="fa-brands fa-kaggle"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1RR8jW9eLdq5RrwfFLGJf-3SAWBOZ6Iql?usp=sharing"
+                        class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; hemanthh17.github.io <i class="fa-solid fa-mug-saucer"></i>| All rights reserve</p>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['AI Enthusiast.', 'Data Analyst.', 'AI Student.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyV2HKeaZrykLxko7PQcyMXCE9FtOFzs3QjrV8Zre_G-L0tvct1EGTopStc9_XK1mvi/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Form Submitted Successfully.."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
