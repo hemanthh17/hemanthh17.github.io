@@ -5,8 +5,17 @@
     font-family: 'Poppins','sans-serif';
     box-sizing: border-box;
 }
+/* html{
+    scroll-behavior: smooth;
+} */
 html{
     scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+html::-webkit-scrollbar {
+    display: none;
 }
 
 body{
